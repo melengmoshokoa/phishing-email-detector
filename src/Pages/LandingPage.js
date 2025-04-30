@@ -8,8 +8,8 @@ function LandingPage() {
                 <div className="Header"> 
                 </div>
                     <dic className="Welcome">
-                        <h2>Hello welcome</h2>
-                        <p>Dont get caught in their nets</p>
+                        <h2 className="typing-effect">PhishCheck</h2>
+                        <p className="typing-effect2">Don't Get Caught in their Net!</p>
                     </dic>
                     <div className="Buttons">
                         <button>Check Your Email</button>

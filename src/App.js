@@ -2,13 +2,15 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './Pages/LandingPage'
+import EmailCheck from './Pages/EmailCheck';
+import Results from './Pages/AboutUs';
 
 function App() {
   return (
     <Router>
     <Routes>
      
-      <Route path="/" element={<LandingPage />} />
+      <Route path="/" element={<Results />} />
 
     </Routes>
   </Router>
