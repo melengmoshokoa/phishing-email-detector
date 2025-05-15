@@ -11,7 +11,7 @@
     /* flex-direction: column; */
     /* justify-content: center; */
     /* align-items: center; */
-    height: 100vh;
+    height: 150vh;
     background-color: #ffffff;
     padding: 20px;
 }
@@ -87,6 +87,33 @@
     background-color: #45a049;
     transform: scale(1.05); /* Slightly enlarges the button on hover */
 }
+
+.Accuracy{
+    padding: 10px 20px;
+    background-color: #b9b9b9;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    width: 150px;
+}
+
+
+.ResultBox{
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.ResultBox h3{
+    margin-top: 25px;
+}
+
+.ResultBox h4{
+    margin-top: 10px;
+}
+
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
