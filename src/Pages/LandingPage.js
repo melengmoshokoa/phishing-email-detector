@@ -1,7 +1,10 @@
 import React from 'react';
-import './LandingPage.css';  // This will be your custom CSS file
+import './LandingPage.css';
+import { useNavigate } from 'react-router-dom';
 
 function LandingPage() {
+    const navigate = useNavigate();
+
     return (
             <div className="Container"> 
 
@@ -12,9 +15,8 @@ function LandingPage() {
                         <p className="typing-effect2">Don't Get Caught in their Net!</p>
                     </dic>
                     <div className="Buttons">
-                        <button>Check Your Email</button>
-                        <button>What is Phishing</button>
-                        <button>Why us?</button>
+                        <button onClick={() => navigate('/check-email')}>Check Your Email</button>
+                        <button onClick={() => navigate('/about')}>About Us</button>
                     </div>
                
             </div>
