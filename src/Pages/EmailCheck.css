@@ -1,18 +1,13 @@
-/* Basic reset for margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Container */
-.Container {
+.Container1 {
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    height: 150vh;
-    background-color: #ffffff;
+    height: 400vh;
+    background-color: #000000;
     padding: 20px;
 }
 
@@ -27,35 +22,35 @@
     text-align: left;
 }
 
-/* Styling for the input instructions */
+
 .InputWords {
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 90px;
+    margin-top: 120px;
 }
 
-/* Styling for the h2 inside InputWords */
 .InputWords h2 {
     font-size: 1.5rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
 }
 
-/* InputBox - Container for textarea and button */
+.FileUpload{
+    text-align: center;
+    gap: 10px; 
+    justify-content: center;
+    color: #ffffff;
+}
+
 .InputBox {
     width: 100%;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 1500px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 30px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
-
+    gap: 10px; 
+    justify-content: center;
 }
 
-/* Styling for textarea */
 .InputBox textarea {
     width: 100%;
     height: 150px;
@@ -66,9 +61,13 @@
     resize: none;
     font-family: Arial, sans-serif;
     height: 250px;
+    border: 1px solid #aaa;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8),
+              inset 0 -1px 1px rgba(0, 0, 0, 0.1),
+              0 2px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #d1d1d1, #f0f0f0);
 }
 
-/* Button styling inside InputBox */
 .ButtonBox {
     padding: 10px 20px;
     background-color: #b9b9b9;
@@ -79,31 +78,55 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 20px;
-    width: 400px;
+    width: 300px;
+
+    padding: 15px 20px;
+  font-size: 1rem;
+  color: #222;
+  background: linear-gradient(145deg, #d1d1d1, #f0f0f0);
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8),
+              inset 0 -1px 1px rgba(0, 0, 0, 0.1),
+              0 2px 5px rgba(0, 0, 0, 0.2);
+    
 }
 
-/* Button hover effect */
 .ButtonBox:hover {
-    background-color: #45a049;
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    transform: scale(1.05); 
 }
 
 .Accuracy{
     padding: 10px 20px;
     background-color: #b9b9b9;
-    color: white;
     font-size: 1rem;
     border: none;
     border-radius: 30px;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 20px;
     width: 150px;
+
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000000;
+    background: linear-gradient(145deg, #d1d1d1, #f0f0f0);
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8),
+                inset 0 -1px 1px rgba(0, 0, 0, 0.1),
+                0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 
 .ResultBox{
     margin-top: 20px;
     flex-direction: column;
+    color: white;
+    margin-left: 10px;
 }
 
 .ResultBox h3{
@@ -114,8 +137,6 @@
     margin-top: 10px;
 }
 
-
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .InputWords h2 {
         font-size: 1.25rem;
